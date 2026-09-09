@@ -1,0 +1,13 @@
+{
+  "name": "STACK — Gourmet Sandwiches & Flatbreads",
+  "short_name": "STACK",
+  "description": "Gurugram's first gourmet sandwich brand. Order on Zomato & Swiggy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1b2a",
+  "theme_color": "#fcfc00",
+  "icons": [
+    { "src": "/media/stack_icon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/media/stack_icon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

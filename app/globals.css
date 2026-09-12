@@ -2409,3 +2409,96 @@ body {
   .sp-platform-btn   { padding: 1rem 1.2rem; }
   .sp-platform-btn-name { font-size: 1rem; }
 }
+
+
+/* ── Photo card (first in carousel) ── */
+.sp-menu-photo-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 50%;         
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgba(13,27,42,0.08);
+  width: 240px;        /* was 50% — now fixed small width */
+  min-width: unset;    /* remove the min-width override */
+  max-width: unset;    /* remove the max-width override */
+  border-radius: 4px;
+  height: 260px;         /* ensure it fills the height of the carousel */
+}
+.sp-menu-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 260px;
+  transition: transform 0.5s ease;
+   min-height: unset;   /* remove the min-height override */
+  height: 100%;
+}
+.sp-menu-photo-card:hover img { transform: scale(1.04); }
+
+.sp-menu-photo-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(to top, rgba(13,27,42,0.85), transparent);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.sp-menu-photo-emoji { font-size: 1.4rem; }
+.sp-menu-photo-name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ── Scroll arrows ── */
+.sp-menu-cat-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(13,27,42,0.12);
+}
+.sp-menu-arrows {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  flex-shrink: 0;
+  align-self: center;
+}
+.sp-menu-arrow {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--yellow);
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+.sp-menu-arrow:hover {
+  background: var(--orange);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .sp-menu-card { width: 220px; }
+  /* .sp-menu-photo-card { width: 160px; } */
+}
+@media (max-width: 480px) {
+  .sp-menu-card { width: 76vw; }
+  /* .sp-menu-photo-card { width: 120px; } */
+}

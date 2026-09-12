@@ -313,10 +313,10 @@ export default function MenuSection() {
           Prices inclusive of taxes · Menu subject to change
         </p>
         <div className="sp-menu-order-btns">
-          <a href="YOUR_ZOMATO_LINK" target="_blank" rel="noreferrer" className="sp-hero-btn zomato">
+          <a href="https://www.zomato.com/ncr/the-stack-sando-sector-65-gurgaon" target="_blank" rel="noreferrer" className="sp-hero-btn zomato">
             🍽 Order on Zomato
           </a>
-          <a href="YOUR_SWIGGY_LINK" target="_blank" rel="noreferrer" className="sp-hero-btn swiggy">
+          <a href="https://www.swiggy.com/city/gurgaon/the-stack-sando-sohna-road-rest1418250" target="_blank" rel="noreferrer" className="sp-hero-btn swiggy">
             🛵 Order on Swiggy
           </a>
         </div>

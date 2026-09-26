@@ -33,6 +33,11 @@ applicationName: 'STACK',
     description: 'Gurugram\'s first premium bread destination. Order on Zomato & Swiggy.',
     images: ['/media/stack_icon.png'],
   },
+  icons: {
+  icon: [
+    { url: '/favicon.ico',       sizes: 'any'     },
+  ],  shortcut: '/favicon.ico',
+},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   verification: { google: 'madqm27UjWPhsV9MOkbStjd4g8OLQDMghTmpmMCsAZY' },
   manifest: '/manifest.json',
